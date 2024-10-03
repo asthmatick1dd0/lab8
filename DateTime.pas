@@ -1,13 +1,11 @@
 ﻿begin
-  var nowYear := dateTime.Now.Year;
+  var nowYear := ReadInteger('Введите год:');
   if nowYear mod 100 = 0 then
     if nowYear mod 400 = 0 then
-      print('год високонсный')
-    else print('год не високонсный')
+      print('Количество дней в году: 366')
+    else print('Количество дней в году: 365')
   else if nowYear mod 4 = 0 then
-    print('год високонсный')
-  else print('год не високонсный');
+    print('Количество дней в году: 366')
+  else print('Количество дней в году: 365');
 end.
 
-print($'Количество секунд в минуте - {60*60}');
-println();
